@@ -46,7 +46,9 @@
                 left: rect.left + scrollLeft
             };
         }
-        animOnScroll();
+        setTimeout((() => {
+            animOnScroll();
+        }), 500);
     }
     window["FLS"] = true;
 })();
